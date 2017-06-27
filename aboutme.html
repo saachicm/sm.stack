@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <body style="background-color:black"</body>
-  <h1 id="demo" style="color:blue;size=300%;font-face=verdana italic;"><i>SAACHI MUTREJA</i></h1>
-  <button type="button" onclick='document.getElementById("demo").innerHTML = "An aspiring programmer!!!"'>Click Me!</button>
-  
-  <style>
+<head>
+<style>
 .container {
   position: relative;
   width: 50%;
@@ -18,59 +15,45 @@
 
 .overlay {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  bottom: 100%;
   left: 0;
   right: 0;
-  height: 100%;
+  background-color: #008CBA;
+  overflow: hidden;
   width: 100%;
-  opacity: 0;
+  height:0;
   transition: .5s ease;
-  background-color: #FF0000;
 }
 
 .container:hover .overlay {
-  opacity: 1;
+  bottom: 0;
+  height: 100%;
 }
 
 .text {
+  white-space: nowrap; 
   color: white;
-  font-size: 50px;
+  font-size: 20px;
   position: absolute;
+  overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
 </style>
+</head>
+<body>
 
-
-
-
+<h2>Slide in Overlay from the Top</h2>
+<p>Hover over the image to see the effect.</p>
 
 <div class="container">
-  <img id='myImage' src="http://cliparting.com/wp-content/uploads/2017/04/Cute-animals-clipart.png" alt="Avatar" class="image">
+  <img src="img_avatar.png" alt="Avatar" class="image">
   <div class="overlay">
-    <div class="text">Hi there!!!</div>
+    <div class="text">Hello World</div>
   </div>
 </div>
-
-  
-  
  
-  
-  <button onclick="document.getElementById('myImage').src='https://lh4.ggpht.com/XdKy1X6aSW4cpe0UKFFwe3rUCe0ErV-GUelqCnyFx75sACCo4yQD79PtyUAZ0HOPMBI=w300'"> A loving teddy!!!</button>
- 
-  
-
- <h2 style="color:blue;size=300%;font-family:verdana;">BIO</h2>
-  <p style="color:red;font-family:"> I am a rising high school junior who is interested in research and applications of machine learning. I want to write code that helps eradicate the limitations of what technology can do and make people's lives easier. 
-  <h2 style="color:blue;size=300%;fontface:"times new roman" size="4";">Fun Facts</h2>
-  <pre style="color:red;font-face:verdana">
-  Apart from coding, I also enjoy math and good food.
-  I can do a 360 degree somersault 
-  If not an engineer, my dream job would have been a cook.
-  My guilty pleasur is reading the National Enquirer online.
-  </pre>
-  <p style="color:red;font-face:verdana">HAVE A LOOK AT MY ACCOMPLISHMENTS><a href="www.wikihow.com/Set-a-Background-Image-in-HTML">HERE</a></p>
-  
+</body>
+</html>
